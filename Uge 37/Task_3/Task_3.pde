@@ -3,7 +3,6 @@ int y = color(255,255,0);
 int g = color(0,255,0);
 int gray = color(155);
 boolean aDown = false;
-boolean sDown = false;
 boolean dDown = false;
 boolean wDown = false;
 
@@ -27,17 +26,28 @@ void draw()
     fill(r);
     circle(width/2,height/2 - 40, 30);
   }
+  else {
+    fill(gray);
+    circle(width/2,height/2 - 40, 30);
+  }
  if(dDown)
   {
    fill(y);
    circle(width/2,height/2, 30);
+  }
+  else {
+    fill(gray);
+    circle(width/2,height/2, 30);
   }
   if(wDown)
   {
    fill(g);
    circle(width/2,height/2 + 40, 30);
   }
- 
+  else {
+    fill(gray);
+    circle(width/2,height/2 + 40, 30);
+  }
 }
 
 
