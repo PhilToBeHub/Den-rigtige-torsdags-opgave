@@ -20,7 +20,7 @@ z = 0;
   {
     println("Failure");
   }
-  if (x + y + z == 30)
+  else if (x + y + z == 30)
   {
     println("Success");
   }
